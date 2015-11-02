@@ -14,7 +14,7 @@ The content the user creates in the app should be persisted using Core Data. The
 - Create Trips by providing a Trip name
 - Add Waypoints to trips by searching the Google Places API for a location name
 - Display Waypoints on a map
-- Remove Waypoints 
+- Remove Waypoints
 - Remove Trips
 - Persist all Trips and Waypoints using Core Data
 - *Synchronize all Trips and Waypoints with your Server - this should include user authentication so that persisted data is user specific. You however don't need a signup / login screen. It is fine to hardcode the user credentials*
@@ -47,4 +47,8 @@ The circular image on this screen is another optional feature. You can implement
 
 ###Add Waypoint Screen
 
-This screen allows the user to search for waypoints. It displays the search results in a table view. The user can select an entry. The selected entry will be highlighted on the map. By using the *save* button 
+This screen allows the user to search for waypoints. It displays the search results in a table view. The user can select an entry. The selected entry will be highlighted on the map. By using the *save* button
+
+
+###Copyright
+https://docs.google.com/a/students.makeschool.com/spreadsheets/d/1gwEA1PmO2dPORQVGWneOZLH9KYMmehJU_fM5ApWO-nA/edit?usp=sharing
