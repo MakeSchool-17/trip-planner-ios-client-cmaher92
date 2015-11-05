@@ -1,25 +1,29 @@
 //
-//  ViewController.swift
+//  PlannedTrips.swift
 //  TripPlanner
 //
-//  Created by Connor Maher on 10/30/15.
+//  Created by Connor Maher on 11/5/15.
 //  Copyright © 2015 Connor Maher. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class PlannedTrips: UIViewController {
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
 
 
 }
-

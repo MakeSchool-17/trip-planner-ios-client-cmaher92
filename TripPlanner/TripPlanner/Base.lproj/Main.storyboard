@@ -25,7 +25,7 @@
         <!--Planned Trips-->
         <scene sceneID="wrq-La-rBI">
             <objects>
-                <viewController id="MG7-gc-EIK" userLabel="Planned Trips" sceneMemberID="viewController">
+                <viewController id="MG7-gc-EIK" userLabel="Planned Trips" customClass="PlannedTrips" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pVD-9v-KeX"/>
                         <viewControllerLayoutGuide type="bottom" id="R9w-Ky-vax"/>
@@ -61,8 +61,8 @@
                             <constraint firstItem="p9O-3v-gKr" firstAttribute="top" secondItem="bOd-V2-fkF" secondAttribute="top" id="zHc-tk-b8X"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Noa-ZX-ms8">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="dJP-H3-KZg">
+                    <navigationItem key="navigationItem" title="Planned Trips" id="Noa-ZX-ms8">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="dJP-H3-KZg">
                             <connections>
                                 <segue destination="cef-LQ-tOQ" kind="show" identifier="Add" id="7zC-3V-CnG"/>
                             </connections>
@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="914" y="1159"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Trip-->
         <scene sceneID="3Pw-P0-vEo">
             <objects>
-                <viewController id="cef-LQ-tOQ" sceneMemberID="viewController">
+                <viewController id="cef-LQ-tOQ" userLabel="Add Trip" customClass="AddTrip" customModule="TripPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OfP-Jf-HGg"/>
                         <viewControllerLayoutGuide type="bottom" id="cd4-aK-QoK"/>
@@ -146,13 +146,39 @@
                     <view key="view" contentMode="scaleToFill" id="1yp-BC-4MJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Give this trip a name!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPd-9g-b0n">
+                                <rect key="frame" x="219" y="274" width="162" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVb-ZZ-2SW">
+                                <rect key="frame" x="271" y="341" width="58" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Add Trip"/>
+                                <connections>
+                                    <action selector="addTripButtonTapped:" destination="cef-LQ-tOQ" eventType="touchUpInside" id="184-ns-v9P"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of trip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="efB-Xv-JnC">
+                                <rect key="frame" x="219" y="303" width="162" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="nameOfTripTextField" destination="efB-Xv-JnC" id="1sQ-6C-j9F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZo-fN-UOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1264" y="-68"/>
+            <point key="canvasLocation" x="1378" y="361"/>
         </scene>
     </scenes>
 </document>
