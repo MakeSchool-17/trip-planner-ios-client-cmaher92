@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		058BFCAB1BEC3B1000EA5F72 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BFCAA1BEC3B1000EA5F72 /* CoreDataStack.swift */; };
+		058BFCAD1BEC3E6C00EA5F72 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BFCAC1BEC3E6C00EA5F72 /* CoreDataHelper.swift */; };
+		058BFCB21BEC419D00EA5F72 /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BFCB01BEC419D00EA5F72 /* Trip+CoreDataProperties.swift */; };
+		058BFCB31BEC419D00EA5F72 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BFCB11BEC419D00EA5F72 /* Trip.swift */; };
 		05F551E21BE3F6CE0002A8D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F551E11BE3F6CE0002A8D1 /* AppDelegate.swift */; };
 		05F551E71BE3F6CE0002A8D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F551E51BE3F6CE0002A8D1 /* Main.storyboard */; };
 		05F551EA1BE3F6CE0002A8D1 /* TripPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05F551E81BE3F6CE0002A8D1 /* TripPlanner.xcdatamodeld */; };
@@ -16,7 +20,6 @@
 		05F552051BE3F6CE0002A8D1 /* TripPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F552041BE3F6CE0002A8D1 /* TripPlannerUITests.swift */; };
 		05FBFDE91BEC073400F44C56 /* PlannedTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBFDE81BEC073400F44C56 /* PlannedTrips.swift */; };
 		05FBFDEB1BEC075000F44C56 /* AddTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBFDEA1BEC075000F44C56 /* AddTrip.swift */; };
-		05FBFDED1BEC141200F44C56 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBFDEC1BEC141200F44C56 /* Trip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		058BFCAA1BEC3B1000EA5F72 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		058BFCAC1BEC3E6C00EA5F72 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		058BFCB01BEC419D00EA5F72 /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Trip+CoreDataProperties.swift"; path = "TripPlanner/Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		058BFCB11BEC419D00EA5F72 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trip.swift; path = TripPlanner/Trip.swift; sourceTree = "<group>"; };
 		05F551DE1BE3F6CE0002A8D1 /* TripPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F551E11BE3F6CE0002A8D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05F551E61BE3F6CE0002A8D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,7 +59,6 @@
 		05F552061BE3F6CE0002A8D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05FBFDE81BEC073400F44C56 /* PlannedTrips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlannedTrips.swift; sourceTree = "<group>"; };
 		05FBFDEA1BEC075000F44C56 /* AddTrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTrip.swift; sourceTree = "<group>"; };
-		05FBFDEC1BEC141200F44C56 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 		05F551D51BE3F6CE0002A8D1 = {
 			isa = PBXGroup;
 			children = (
+				058BFCB01BEC419D00EA5F72 /* Trip+CoreDataProperties.swift */,
+				058BFCB11BEC419D00EA5F72 /* Trip.swift */,
 				05F551E01BE3F6CE0002A8D1 /* TripPlanner */,
 				05F551F81BE3F6CE0002A8D1 /* TripPlannerTests */,
 				05F552031BE3F6CE0002A8D1 /* TripPlannerUITests */,
@@ -104,8 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				05F551E11BE3F6CE0002A8D1 /* AppDelegate.swift */,
+				058BFCAA1BEC3B1000EA5F72 /* CoreDataStack.swift */,
+				058BFCAC1BEC3E6C00EA5F72 /* CoreDataHelper.swift */,
 				05F551E51BE3F6CE0002A8D1 /* Main.storyboard */,
-				05FBFDEC1BEC141200F44C56 /* Trip.swift */,
 				05FBFDE81BEC073400F44C56 /* PlannedTrips.swift */,
 				05FBFDEA1BEC075000F44C56 /* AddTrip.swift */,
 				05F551EB1BE3F6CE0002A8D1 /* Assets.xcassets */,
@@ -266,9 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05FBFDED1BEC141200F44C56 /* Trip.swift in Sources */,
+				058BFCB21BEC419D00EA5F72 /* Trip+CoreDataProperties.swift in Sources */,
 				05FBFDEB1BEC075000F44C56 /* AddTrip.swift in Sources */,
 				05F551EA1BE3F6CE0002A8D1 /* TripPlanner.xcdatamodeld in Sources */,
+				058BFCAD1BEC3E6C00EA5F72 /* CoreDataHelper.swift in Sources */,
+				058BFCB31BEC419D00EA5F72 /* Trip.swift in Sources */,
+				058BFCAB1BEC3B1000EA5F72 /* CoreDataStack.swift in Sources */,
 				05FBFDE91BEC073400F44C56 /* PlannedTrips.swift in Sources */,
 				05F551E21BE3F6CE0002A8D1 /* AppDelegate.swift in Sources */,
 			);

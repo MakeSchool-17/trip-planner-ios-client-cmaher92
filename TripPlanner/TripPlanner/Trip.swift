@@ -6,10 +6,12 @@
 //  Copyright © 2015 Connor Maher. All rights reserved.
 //
 
-class Trip {
-    var name: String
-    
-    init(name: String) {
-        self.name = name
-    }
+import Foundation
+import CoreData
+
+
+class Trip: NSManagedObject {
+
+// Insert code here to add functionality to your managed object subclass
+
 }

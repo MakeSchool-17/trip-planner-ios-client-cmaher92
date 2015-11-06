@@ -13,6 +13,8 @@ class AddTrip: UIViewController {
     @IBOutlet weak var nameOfTripTextField: UITextField!
     @IBAction func addTripButtonTapped(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
+        let userInput = self.nameOfTripTextField.text
+        coreDataHelper.saveInitTrip(userInput!)
     }
 
 
